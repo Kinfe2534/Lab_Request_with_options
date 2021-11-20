@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>AutoFiller Options</title></head>
+<body>
+  <table>
+  <h3>Set AutoFiller Options Below and Click Save</h3>
+  <tbody>
+    <tr>
+      <td><label for="specificLocation">Specific Location</label></td>
+      <td><input id="specificLocation" name="specificLocation" placeholder="i.e Lideta HC"></td>
+      <td>Set the Specific location of sample collection as in Lab Request</td>
+    </tr>
+    <tr>
+      <td><label for="barcode">Barcode</label></td>
+      <td><input id="barcode" name="barcode"></td>
+      <td>Write the barcode that u want inserted...default empty</td>
+      </tr>
+      <tr>
+        <td><label for="sampleCollectedBy">Sample Collected BY</label></td>
+        <td><input id="sampleCollectedBy" name="sampleCollectedBy"></td>
+        <td>Write the name of the person who collected the sample</td>
+      </tr>
+      <tr>
+        <td><label for="formCompletedBy">Form Completed By</label></td>
+        <td><input id="formCompletedBy" name="formCompletedBy"></td>
+        <td>Write the name of the person who completed the form</td>
+      </tr>
+      <tr>
+        <td><label for="speed">Speed</label></td>
+        <td><input id="speed" name="speed" placeholder="i.e speed in miliseconds"></td>
+        <td>this is the speed of auto fill in miliseconds good choice= 100</td>
+      </tr>
+      <tr>
+        <td><label for="occupation_Scrolldown">Occupation Scrolldown</label></td>
+        <td><input id="occupation_Scrolldown" name="occupation_Scrolldown"></td>
+        <td>scroll down in pixel until the option you want is visible</td>
+        </tr>
+        <tr>
+          <td><label for="occupation">Occupation</label></td>
+          <td><input id="occupation" name="occupation" placeholder="choose 1 to 8"></td>
+          <td>after scrolldown .. insert the number of the option from 2 to 8</td>
+        </tr>
+        <tr>
+          <td><label for="locationSC_Scrolldown">LocationSC Scrolldown</label></td>
+          <td><input id="locationSC_Scrolldown" name="locationSC_Scrolldown"></td>
+          <td>scroll down in pixel until the option you want is visible</td>
+        </tr>
+        <tr>
+          <td><label for="locationSC">LocationSC</label></td>
+          <td><input id="locationSC" name="locationSC" placeholder="choose 1 to 2"></td>
+          <td>after scrolldown..insert the number you want to choose...between 2 and 8</td>
+        </tr>
+        <tr>
+          <td><label for="typeOfSpecimen">Type Of Specimen</label></td>
+          <td><input id="typeOfSpecimen" name="typeOfSpecimen" placeholder="2=oro, 3=naso"></td>
+          <td>insert the number you want to choose...2=oro, 3=naso....default naso</td>
+        </tr>
+  </tbody>
+</table>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
